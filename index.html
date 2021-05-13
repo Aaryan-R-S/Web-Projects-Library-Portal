@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Gall Library.io | India</title>
+    <link rel="icon" href="books.png">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="text-align: center;">
+        <a class="navbar-brand" href="#" style="font-weight: bold;">Gall Library.io</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" >My Library<span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search" aria-label="Search"> -->
+                <div class="form-group">
+                    <select class="form-control mr-sm-2" id="search">
+                      <option value="">All Genres</option>
+                      <option>Fiction</option>
+                      <option>Sci-Fi</option>
+                      <option>Coding</option>
+                    </select>
+                  </div>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: white;">Sign
+                    In</button>
+            </form>
+        </div>
+    </nav>
+    <div id="message"></div>
+    <div class="container my-2 bg-light" style="width: 60vw;">
+        <h1 style="text-align: center;">Welcome to Gall BookWorld !</h1>
+        <form id="libraryForm">
+            <div class="form-group">
+                <label for="bookName">Name of Book :</label>
+                <input type="text" class="form-control" id="bookName">
+            </div>
+            <div class="form-group">
+                <label for="bookAuthor">Author :</label>
+                <input type="text" class="form-control" id="bookAuthor">
+            </div>
+
+            <div class="form-group">
+                <span> Genre :</span>
+                <div class="row col-sm-2 mx-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="fiction" value="Fiction" checked>
+                        <label class="form-check-label" for="fiction">
+                            Fiction
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="scifi" value="Sci-Fi">
+                        <label class="form-check-label" for="scifi">
+                            Sci-Fi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="coding" value="Coding">
+                        <label class="form-check-label" for="coding">
+                            Coding
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin: 2px 5px; text-align: center;">Add to
+                Cart</button>
+            <button type="reset" class="btn btn-primary" style="margin: 2px 5px; text-align: center;">Clear</button>
+        </form>
+    </div>
+    <table class="table" style="width: 70vw; margin: auto;">
+        <h2 style="width: 70vw; margin: 30px auto;">My Cart</h2>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+      
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="indexes6.js"></script> -->
+    <script src="new.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
